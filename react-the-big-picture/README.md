@@ -1,5 +1,13 @@
 # React: The Big Picture
 
+Table of contents
+=================
+
+<!--ts-->
+   * [History](#history)
+   * [Why React?](#why-react)
+<!--te-->
+
 ## History
 
 * Created by Facebook in 2011

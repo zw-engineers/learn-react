@@ -77,5 +77,7 @@ or
 * Facebook has over 30k components and use code mods to help upgrade old react versions to new react versions you may use. 
 
 ### Community support
+
+* It has a huge community (75k stars on Github)
 ### Performance
 ### Testability

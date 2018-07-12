@@ -6,6 +6,7 @@ Table of contents
 <!--ts-->
    * [History](#history)
    * [Why React?](#why-react)
+   * [Tradeoffs](tradeoffs)
 <!--te-->
 
 ## History
@@ -110,4 +111,25 @@ or
 * Run in-memory via Node
 * Reliable, deterministic unit tests in isolation.
 * Write quicky, update easy with tools like JEST.
-* Most popular testing framework for React as it was developed by Facebook. 
+* Most popular testing framework for React as it was developed by Facebook.
+
+## Tradeoffs
+
+### Framework vs. Library
+
+* Angular, Ember are `Frameworks` and React is a `Library` since it's lean and focuses on components.
+* Framework
+    * A Framework contains more opinions.
+    * Less decision fatigue.
+    * Less setup overhead.
+    * More cross-team consistency.
+* Library
+    * Light-weight.
+    * Sprinkle on existing apps e.g. Facebook replaced PHP app with React.
+    * Pick what you need.
+    * 
+
+### Concise vs. Explicit
+### Template-centric vs. Javascript-centric
+### Standard vs. Single File
+### Community vs. Corporate

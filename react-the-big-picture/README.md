@@ -72,6 +72,10 @@ or
 [CodeSandbox](https://codesandbox.io/).
 
 ### Corporate investment
+
+* Facebook still maintains react even though it's open source. 
+* Facebook has over 30k components and use code mods to help upgrade old react versions to new react versions you may use. 
+
 ### Community support
 ### Performance
 ### Testability

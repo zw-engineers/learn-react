@@ -58,8 +58,16 @@ class HelloWorld extends React.Component {
 * `JSX` compiles to JS.
 
 `<h1 color="red">Heading here</h1>`
+
 :point_down:
+
 `React.createElement("h1", {color: "red"}, "Heading here")`
+* The call to `createElement` generates `HTML`.
+* `createElement(tag name, obj of attributes to set, markup to sit inside the tag)`
+* Should you wish to creat e react app you can run:
+`npx create-react-app my-app`
+or
+`npm init react-app my-app`
 
 ### Corporate investment
 ### Community support

@@ -68,6 +68,8 @@ class HelloWorld extends React.Component {
 `npx create-react-app my-app`
 or
 `npm init react-app my-app`
+* Should you wish not to just code your ideas without configuration, you can use 
+[CodeSandbox](https://codesandbox.io/).
 
 ### Corporate investment
 ### Community support

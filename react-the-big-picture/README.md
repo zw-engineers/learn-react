@@ -85,6 +85,21 @@ or
 * 50k reactjs tags on StakeOverflow.
 * Many of the big companies use react e.g. Apple, Microsoft, Air BnB etc.
 
-
 ### Performance
+
+* Updating the DOM is expensive, so React minimises DOM changes.
+* Without Virtual DOM
+    * Blindly update DOM using new state.
+* With Virtual DOM
+    * Update the DOM in the most efficient way.
+* React with react-dom = 35k
+* Inferno = 9k with a similar API to React.
+* PReact = 3k also with a similar API to React.
+
 ### Testability
+
+* Little to no config required.
+* Run in-memory via Node
+* Reliable, deterministic unit tests in isolation.
+* Write quicky, update easy with tools like JEST.
+* Most popular testing framework for React as it was developed by Facebook. 

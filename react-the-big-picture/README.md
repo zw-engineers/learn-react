@@ -78,6 +78,13 @@ or
 
 ### Community support
 
-* It has a huge community (75k stars on Github)
+* It has a huge community (75k stars on Github), which makes it one of the most popular repos on Github.
+* Nearly 5k companies have reported to use react.
+* React is the 8th most popular technology on stackshare (for now..).
+* 20k active developers contribute to Reactiflux which is another react project.
+* 50k reactjs tags on StakeOverflow.
+* Many of the big companies use react e.g. Apple, Microsoft, Air BnB etc.
+
+
 ### Performance
 ### Testability

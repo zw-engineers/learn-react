@@ -125,7 +125,7 @@ or
     * More cross-team consistency.
 * Library
     * Light-weight.
-    * Sprinkle on existing apps e.g. Facebook replaced PHP app with React.
+    * Sprinkle on exist ing apps e.g. Facebook replaced PHP app with React.
     * Pick what you need.
     * 
 

@@ -6,7 +6,7 @@ Table of contents
 <!--ts-->
    * [History](#history)
    * [Why React?](#why-react)
-   * [Tradeoffs](tradeoffs)
+   * [Tradeoffs](#tradeoffs)
 <!--te-->
 
 ## History

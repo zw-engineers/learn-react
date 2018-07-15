@@ -12,6 +12,8 @@
 
 * Functional Component
     * Often associated with the presentational concepts.
+    * Simplest form of a `React` component.
+    * A simple function, with a simple contract. It recieves an object of properties `(props)`, and it returns what looks like HTML but actually is `JSX`. 
 
 ```javascript
 const MyComponent = (props) => {
@@ -20,8 +22,6 @@ const MyComponent = (props) => {
     );
 }
 ```
-    * Simplest form of a `React` component.
-    * A simple function, with a simple contract. It recieves an object of properties `(props)`, and it returns what looks like HTML but actually is `JSX`. 
 
 * Class Component
     * A more featured way to define a `React` component.

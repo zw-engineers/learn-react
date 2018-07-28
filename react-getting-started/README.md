@@ -38,3 +38,4 @@ const MyComponent = (props) => {
 * `JSX` allows us to describe or `DOM` in a syntax very close to the DOM we are used to.
 * It is optional however, `React` can be used without using `JSX` as shown on the code on the right above.
 * In fact `React` compiles the `JSX` code on the left to pure `Javascript` as the code on the right.
+* On the right, is a Javascript representation of the DOM.

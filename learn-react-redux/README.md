@@ -13,3 +13,5 @@
     * Subscriber - Listens for state change to update the ui.
     * Middleware - allows us to directly access the dispatch() method so that we can make
     async calls from our actions.
+    
+1) Provider - 

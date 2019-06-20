@@ -1,5 +1,7 @@
 # Learn-React-Redux
 
+This is based on a good source explaining how Redux works with React [here](https://www.youtube.com/watch?v=93p3LxR9xfM&t).
+
 <p align="center">
     <img src="https://user-images.githubusercontent.com/29547780/59553727-15c87780-8f91-11e9-8035-aaab63a7f18f.png" />
 </p>

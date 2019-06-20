@@ -36,3 +36,4 @@ This is based on a good source explaining how Redux works with React [here](http
       document.getElementById('root')
     )
     ```
+<!-- TODO: Add more reading info on REDUX lifecycle. -->

@@ -3,13 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 import Posts from './components/Posts';
 import PostForm from './components/PostForm';
-import {Provider} from "react-redux";
-import {createStore} from "redux/es/redux";
-import {applyMiddleware} from "redux";
+import {Provider} from 'react-redux';
+import store from './store';
 
 function App() {
-    const store = createStore(() => [], {}, applyMiddleware());
-
     return (
         <Provider store={store}>
             <div className="App">

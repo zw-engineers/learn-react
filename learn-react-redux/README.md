@@ -56,8 +56,6 @@ This is based on a good source explaining how Redux works with React [here](http
    
    Actions are plain JavaScript objects. Actions must have a type property that indicates the type of action being performed. Types should typically be defined as string constants. Once your app is large enough, you may want to move them into a separate module.
 
----
-
 2) Reducers specify how the application's state changes in response to actions sent to the store. Remember that actions only describe what happened, but don't describe how the application's state changes.
     
     Reducers take two parameters:
@@ -108,6 +106,16 @@ This is based on a good source explaining how Redux works with React [here](http
     ```
     
 4) Store - In the previous sections, we defined the actions that represent the facts about “what happened” and the reducers that update the state according to those actions.
+    
+    The *Store* is the object that brings them together. The store has the following responsibilities:
+    
+    * Holds application state;
+    * Allows access to state via getState();
+    * Allows state to be updated via dispatch(action);
+    * Registers listeners via subscribe(listener);
+    * Handles unregistering of listeners via the function returned by subscribe(listener).
+    
+    It's important to note that you'll only have a single store in a Redux application. When you want to split your data handling logic, you'll use reducer composition instead of many stores.
 
    
 <!-- TODO: Add more reading info on REDUX lifecycle. -->

@@ -16,6 +16,25 @@ This is based on a good source explaining how Redux works with React [here](http
     * Middleware - allows us to directly access the dispatch() method so that we can make
     async calls from our actions.
     
+## Entry Point
+
+First we have our component e.g. `App` which contains our sub components,
+`PostForm` and `Posts`.
+
+```js
+function App() {
+    return (
+        <div className="App">
+            <PostForm/>
+            <hr/>
+            <Posts/>
+        </div>
+    );
+}
+
+export default App;
+```
+
 1) Actions are payloads of information that send data from your application to your store. They are the only source of information for the store. You send them to the store using store.dispatch().
    
    Here's an example action which represents fetching a blog post:

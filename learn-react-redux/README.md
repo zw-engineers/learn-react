@@ -49,6 +49,10 @@ function App() {
 export default App;
 ```
 
+In order for PostForm and Posts to share the same state in makes sense to have
+Redux `Store` in a parent component `App.js`.
+
+ 
 
 
 

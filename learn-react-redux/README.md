@@ -15,7 +15,21 @@ This is based on a good source explaining how Redux works with React [here](http
     * Subscriber - Listens for state change to update the ui.
     * Middleware - allows us to directly access the dispatch() method so that we can make
     async calls from our actions.
-    
+   
+
+## The Problem
+
+- PostForm allow users to add posts to a blog.
+- Posts needs to update posts list when a new post is added.
+
+## Solution
+
+Since the state of PostForm and Posts are separate, we need a way to keep the two 
+in sync when any component updates its own information.
+In this case, Redux allows components to share the same state. This means that Posts
+component can _listen_ to updates made by the PostForm component when a new blog
+post is added.
+
 ## Entry Point
 
 First we have our component e.g. `App` which contains our sub components,
@@ -34,6 +48,11 @@ function App() {
 
 export default App;
 ```
+
+
+
+
+---
 
 1) Actions are payloads of information that send data from your application to your store. They are the only source of information for the store. You send them to the store using store.dispatch().
    

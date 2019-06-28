@@ -19,7 +19,8 @@ This is based on a good source explaining how Redux works with React [here](http
 
 ## The Problem
 
-- PostForm allows users to add posts to a blog however, Posts needs to update posts list when a new post is added.
+- The `PostForm` component allows users to add posts to a blog by adding a title and some content body 
+however, the `Posts` component needs to update the list of posts when a new blog post is added.
 
 ## Solution
 

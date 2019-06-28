@@ -48,9 +48,48 @@ function App() {
 export default App;
 ```
 
-In order for PostForm and Posts to share the same state in makes sense to have
+In order for PostForm and Posts to share the same state it makes sense to have the
 Redux `Store` in a parent component `App.js`.
 
+With redux we need to create the `store` and we do this by using a `Provider` which takes in 
+a created store as a parameter. E.g. below:
+
+```js
+function App() {
+    return (
+        <Provider store={store}>
+            <div className="App">
+                <PostForm/>
+                <hr/>
+                <Posts/>
+            </div>
+        </Provider>
+    );
+}
+
+export default App;
+```
+
+In our case we abstracted our store into a separate file called `store.js`. So our store looks like:
+```js
+import {applyMiddleware, compose, createStore} from "redux";
+import thunk from "redux-thunk";
+import {rootReducer} from "./reducers";
+
+const initialState = {};
+const middleware = [thunk];
+
+const store = createStore(
+    rootReducer,
+    initialState,
+    compose(
+        applyMiddleware(...middleware),
+        window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+    )
+);
+
+export default store;
+```
  
 
 

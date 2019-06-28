@@ -39,7 +39,7 @@ component can update its state when a new blog post is added in the `PostForm` c
 
 ## Entry Point
 
-First we have our component e.g. `App` which contains our sub components,
+First we have our component `App.js` which contains our sub components,
 `PostForm` and `Posts`.
 
 ```js
@@ -56,13 +56,16 @@ function App() {
 export default App;
 ```
 
-In order for PostForm and Posts to share the same state it makes sense to have the
-Redux `Store` in a parent component `App.js`.
+In order for the `PostForm` component and the `Posts` component to share the same state it makes sense 
+to have the Redux `Store` in a parent component `App.js`.
 
-With redux we need to create the `store` and we do this by using a `Provider` which takes in 
-a created store as a parameter. E.g. below:
+With redux we need to create the `store` and we do this by wrapping a `Provider` around the component we 
+want the _store_ to  be available to. The `Provider` takes in a created store as a parameter. E.g. below:
 
 ```js
+import {Provider} from 'react-redux';
+import store from './store';
+
 function App() {
     return (
         <Provider store={store}>

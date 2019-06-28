@@ -25,16 +25,17 @@ This is based on a good source explaining how Redux works with React [here](http
 
 ## The Problem
 
-- The `PostForm` component allows users to add posts to a blog by adding a title and some content body 
+- The `PostForm` component allows users to add posts to a blog by adding a title and some body content
 however, the `Posts` component needs to update the list of posts when a new blog post is added.
+    - What this means is that the `Posts` component needs to know when to change its own state when a 
+    new blog post is _submitted_. 
 
 ## Solution
 
-Since the state of PostForm and Posts are separate, we need a way to keep the two 
-in sync when any component updates its own information.
-In this case, Redux allows components to share the same state. This means that Posts
-component can _listen_ to updates made by the PostForm component when a new blog
-post is added.
+Since the state of the `PostForm` component and the `Posts` component are separate, we need a way to keep 
+the two in sync when any component updates its own information.
+In this case, Redux allows components to share the same state. This means that the `Posts`
+component can update its state when a new blog post is added in the `PostForm` component.
 
 ## Entry Point
 

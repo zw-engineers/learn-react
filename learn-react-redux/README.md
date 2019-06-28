@@ -15,6 +15,12 @@ This is based on a good source explaining how Redux works with React [here](http
     * Subscriber - Listens for state change to update the ui.
     * Middleware - allows us to directly access the dispatch() method so that we can make
     async calls from our actions.
+    
+## Blog Post App
+
+<p align=center>
+    <img src="https://user-images.githubusercontent.com/29547780/60361018-04da2600-99d5-11e9-9f2d-a477b2f7067e.png"/>
+</p>
    
 
 ## The Problem
